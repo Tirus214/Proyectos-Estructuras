@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "contenedor.h"
 #include <QtWidgets/QMainWindow>
-
+/*
 #include <QtCharts/QChartView>
 #include <QtCharts/QBarSeries>
 #include <QtCharts/QBarSet>
@@ -12,10 +12,10 @@
 #include <QtCharts/QCategoryAxis>
 #include <QtCharts/QPieSeries>
 #include <QtCharts/QPieSlice>
-
+*/
 //QT_CHARTS_USE_NAMESPACE
 
-int grafica(int argc, char *argv[]);
+//int grafica(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 
-
+/*
 int grafica(int argc, char *argv[]){
 
     QApplication a(argc, argv);
@@ -106,3 +106,4 @@ int grafica(int argc, char *argv[]){
     w.show();
     return a.exec();
 }
+*/

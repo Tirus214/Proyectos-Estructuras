@@ -27,8 +27,8 @@ public:
     // Algoritmos intercambio, seleccion, insercion, buerbuja, shell y quicksort tomados del libro
     // "Algoritmos y Estructuas de Datos en C" de Luis Joyanes Aguilar e Ignacio Zahonero Martinez
 
-    // Algoritmo mergesort y su auxiliar merge tomados del blog CodeMyN
-    // https://codemyn.blogspot.com/2019/07/metodos-de-ordenamiento-mergesort-en-c.html
+    // Algoritmo mergesort y su auxiliar merge tomados de la pagina GeeeksforGeeks
+    // https://www.geeksforgeeks.org/merge-sort/
 
     // Algoritmo binsort tomado del prezi de Luis Munoz
     // https://prezi.com/ourpl7caxra-/bin-sort/

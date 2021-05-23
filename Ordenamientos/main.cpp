@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    //w.setContenedor(contenedor);
+    w.setContenedor(contenedor);
     return a.exec();
 }
 

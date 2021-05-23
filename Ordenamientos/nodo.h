@@ -9,7 +9,7 @@
 using namespace std;
 
 struct Nodo{
-    int* numero;
+    int numero;
     Nodo* siguiente;
     Nodo* anterior;
 
@@ -19,7 +19,7 @@ struct Nodo{
     }
 
     Nodo(int numNuevo){
-        numero = &numNuevo;
+        numero = numNuevo;
         siguiente = anterior = NULL;
     }
 };

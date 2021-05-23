@@ -8,6 +8,7 @@ struct ColaCircular{
     Nodo *primero;
     Nodo *ultimo;
 
+
     //constructor
     ColaCircular(){
         primero = ultimo = NULL;

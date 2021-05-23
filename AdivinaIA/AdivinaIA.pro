@@ -1,15 +1,6 @@
-
-
-
-
-QT       += core gui charts
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-#TARGET = Test2
-#TEMPLATE = app
-
-#DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
@@ -18,21 +9,11 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    arraydinamico.cpp \
-    contenedor.cpp \
     main.cpp \
-    mainwindow.cpp \
-    nodo.cpp \
-    ordenador.cpp \
-    pila.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    arraydinamico.h \
-    contenedor.h \
-    mainwindow.h \
-    nodo.h \
-    ordenador.h \
-    pila.h
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui

@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "ordenador.h"
+#include "contenedor.h"
 #include <QtWidgets/QMainWindow>
 
 #include <QtCharts/QChartView>
@@ -15,27 +15,30 @@
 
 //QT_CHARTS_USE_NAMESPACE
 
-void grafica();
+int grafica(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
 
-    Ordenador* ordenador= new Ordenador();
+    Contenedor* contenedor= new Contenedor();
 
-    ordenador->generarNumeros();
-    ordenador->imprimirNumeros();
-    cout << endl;
-    ordenador->shell();
-    ordenador->imprimirNumeros();
+    contenedor->generarNumeros();
+    contenedor->imprimir();
+    cout << endl << endl;
+    //contenedor->ordMergesort();
+    //contenedor->imprimir();
 
     QApplication a(argc, argv);
-    grafica();
+    MainWindow w;
+    w.show();
+    //w.setContenedor(contenedor);
     return a.exec();
 }
 
 
-void grafica(){
+int grafica(int argc, char *argv[]){
 
+    QApplication a(argc, argv);
 
     QBarSet *set0 = new QBarSet("Listas");
 
@@ -97,10 +100,9 @@ void grafica(){
             // Apply palette changes to the application
     qApp->setPalette(pal);
 
-
     QMainWindow w;
     w.setCentralWidget(chartView);
     w.resize(800,600);
     w.show();
-
+    return a.exec();
 }

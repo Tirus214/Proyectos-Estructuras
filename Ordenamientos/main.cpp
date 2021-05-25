@@ -23,9 +23,12 @@ int main(int argc, char *argv[])
     Contenedor* contenedor= new Contenedor();
 
     contenedor->generarNumeros();
-    contenedor->imprimir();
-    cout << endl << endl;
+    //contenedor->imprimir();
+    //cout << endl << endl;
+    //contenedor->startTimer();
     //contenedor->ordMergesort();
+    //contenedor->endTimer();
+    //cout << endl << contenedor->duracion << endl;
     //contenedor->imprimir();
 
     QApplication a(argc, argv);

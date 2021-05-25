@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
-    <height>730</height>
+    <width>1063</width>
+    <height>698</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>40</x>
       <y>90</y>
-      <width>141</width>
+      <width>111</width>
       <height>421</height>
      </rect>
     </property>
@@ -27,7 +27,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>50</y>
       <width>121</width>
       <height>31</height>
@@ -40,9 +40,9 @@
    <widget class="QTextEdit" name="txtCola">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>180</x>
       <y>90</y>
-      <width>141</width>
+      <width>111</width>
       <height>421</height>
      </rect>
     </property>
@@ -50,7 +50,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>200</x>
       <y>50</y>
       <width>81</width>
       <height>31</height>
@@ -63,7 +63,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>380</x>
       <y>50</y>
       <width>31</width>
       <height>31</height>
@@ -76,9 +76,9 @@
    <widget class="QTextEdit" name="txtPila">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>330</x>
       <y>90</y>
-      <width>141</width>
+      <width>111</width>
       <height>421</height>
      </rect>
     </property>
@@ -86,7 +86,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>620</x>
+      <x>510</x>
       <y>50</y>
       <width>71</width>
       <height>31</height>
@@ -99,9 +99,9 @@
    <widget class="QTextEdit" name="txtLista">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>480</x>
       <y>90</y>
-      <width>141</width>
+      <width>121</width>
       <height>421</height>
      </rect>
     </property>
@@ -109,7 +109,7 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>820</x>
+      <x>670</x>
       <y>50</y>
       <width>41</width>
       <height>31</height>
@@ -122,9 +122,9 @@
    <widget class="QTextEdit" name="txtVector">
     <property name="geometry">
      <rect>
-      <x>770</x>
+      <x>640</x>
       <y>90</y>
-      <width>141</width>
+      <width>111</width>
       <height>421</height>
      </rect>
     </property>
@@ -132,8 +132,8 @@
    <widget class="QPushButton" name="btnInsercion">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>550</y>
+      <x>800</x>
+      <y>190</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -145,8 +145,8 @@
    <widget class="QPushButton" name="btnIntercambio">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>550</y>
+      <x>800</x>
+      <y>90</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -158,8 +158,8 @@
    <widget class="QPushButton" name="btnSeleccion">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>550</y>
+      <x>800</x>
+      <y>140</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -171,8 +171,8 @@
    <widget class="QPushButton" name="btnBurbuja">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>550</y>
+      <x>800</x>
+      <y>240</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -184,8 +184,8 @@
    <widget class="QPushButton" name="btnShell">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>550</y>
+      <x>800</x>
+      <y>290</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -197,8 +197,8 @@
    <widget class="QPushButton" name="btnMergesort">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>590</y>
+      <x>800</x>
+      <y>340</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -210,8 +210,8 @@
    <widget class="QPushButton" name="btnQuicksort">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>590</y>
+      <x>800</x>
+      <y>390</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -223,8 +223,8 @@
    <widget class="QPushButton" name="btnBinsort">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>590</y>
+      <x>800</x>
+      <y>440</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -236,8 +236,8 @@
    <widget class="QPushButton" name="btnRadixsort">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>590</y>
+      <x>800</x>
+      <y>490</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -249,8 +249,8 @@
    <widget class="QPushButton" name="btnDesordenar">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>640</y>
+      <x>440</x>
+      <y>550</y>
       <width>171</width>
       <height>41</height>
      </rect>
@@ -265,23 +265,174 @@
      <string>Desordenar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnEstadisticas">
+   <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>640</y>
-      <width>171</width>
-      <height>41</height>
+      <x>800</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
+    <property name="text">
+     <string>Ordenamiento</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIntercambio">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>90</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="text">
-     <string>Estadisticas</string>
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSeleccion">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>140</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblInsercion">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>190</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBurbuja">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>240</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblShell">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>290</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMergsort">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>340</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblQuicksort">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>390</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBinsort">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>440</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblRadixsort">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>490</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tiempo</string>
     </property>
    </widget>
   </widget>
@@ -290,7 +441,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>962</width>
+     <width>1063</width>
      <height>25</height>
     </rect>
    </property>

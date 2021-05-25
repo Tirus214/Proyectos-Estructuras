@@ -23,16 +23,14 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     nodo.cpp \
-    ordenador.cpp \
-    pila.cpp
+    ordenador.cpp
 
 HEADERS += \
     arraydinamico.h \
     contenedor.h \
     mainwindow.h \
     nodo.h \
-    ordenador.h \
-    pila.h
+    ordenador.h
 
 FORMS += \
     mainwindow.ui

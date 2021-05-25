@@ -55,45 +55,54 @@ void MainWindow::imprimir(Nodo* primero, QTextEdit* txtArea){
 
 void MainWindow::on_btnIntercambio_clicked(){
     contenedor->ordIntercambio();
+    ui->lblIntercambio->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnInsercion_clicked(){
     contenedor->ordInsercion();
+    ui->lblInsercion->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnSeleccion_clicked(){
     contenedor->ordSeleccion();
+    ui->lblSeleccion->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnBurbuja_clicked(){
     contenedor->ordBurbuja();
+    ui->lblBurbuja->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnShell_clicked(){
     contenedor->ordShell();
+    ui->lblShell->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnMergesort_clicked(){
     contenedor->ordMergesort();
+    ui->lblMergsort->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnQuicksort_clicked(){
     contenedor->ordQuicksort();
+    ui->lblQuicksort->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 void MainWindow::on_btnBinsort_clicked(){
     contenedor->ordBinsort();
+    ui->lblBinsort->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 
 void MainWindow::on_btnRadixsort_clicked(){
     contenedor->ordRadixsort();
+    ui->lblRadixsort->setText(QString::number(contenedor->duracion));
     imprimirElementos();
 }
 

@@ -11,15 +11,21 @@ CONFIG += c++11
 SOURCES += \
     arbol.cpp \
     filemanager.cpp \
+    final.cpp \
     juego.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    nodo.cpp \
+    partida.cpp
 
 HEADERS += \
     arbol.h \
     filemanager.h \
+    final.h \
     juego.h \
-    mainwindow.h
+    mainwindow.h \
+    nodo.h \
+    partida.h
 
 FORMS += \
     final.ui \

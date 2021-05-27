@@ -1,73 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Partida</class>
+ <widget class="QDialog" name="Partida">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>429</width>
-    <height>266</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>40</y>
-      <width>351</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Pregunta</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>140</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Si</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>140</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>No</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QLabel" name="lblPregunta">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>429</width>
+     <x>90</x>
+     <y>100</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pregunta&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSi">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>80</width>
      <height>25</height>
     </rect>
    </property>
+   <property name="text">
+    <string>Si</string>
+   </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QPushButton" name="btnNo">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>220</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>No</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

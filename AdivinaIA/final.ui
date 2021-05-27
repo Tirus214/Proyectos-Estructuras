@@ -1,70 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Final</class>
+ <widget class="QDialog" name="Final">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>449</width>
-    <height>321</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btnAceptar">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>180</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Aceptar</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txtIngresar">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>110</y>
-      <width>271</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblSolicitud">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>50</y>
-      <width>191</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Solicitud</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QPushButton" name="btnAceptar">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>449</width>
+     <x>160</x>
+     <y>230</y>
+     <width>80</width>
      <height>25</height>
     </rect>
    </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QLabel" name="lblPregunta">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pregunta&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtIngresar">
+   <property name="geometry">
+    <rect>
+     <x>73</x>
+     <y>150</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

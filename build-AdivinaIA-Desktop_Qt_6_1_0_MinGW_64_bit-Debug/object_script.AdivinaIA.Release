@@ -1,0 +1,11 @@
+release/arbol.o
+release/filemanager.o
+release/final.o
+release/juego.o
+release/main.o
+release/mainwindow.o
+release/nodo.o
+release/partida.o
+release/moc_final.o
+release/moc_mainwindow.o
+release/moc_partida.o

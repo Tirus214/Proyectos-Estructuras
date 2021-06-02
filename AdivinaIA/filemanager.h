@@ -5,6 +5,7 @@
 #include <fstream>
 #include <QFile>
 #include <QDebug>
+#define K 5000000
 
 
 class Filemanager
@@ -12,7 +13,7 @@ class Filemanager
 public:
     Filemanager(){}
     void leer(QString name, QString arreglo[]);
-    void escribir(QString name, QStringList arreglo);
+    void escribir(QString name, QString arreglo[]);
     QStringList leer2(QString name);
 };
 

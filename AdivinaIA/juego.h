@@ -10,7 +10,7 @@ public:
     Arbol* arbol;
     Nodo* actual;
     bool acerto;
-    QStringList arreglo;
+    QString arreglo[K];
     int cantNodos;
 
     Juego(){
@@ -23,8 +23,9 @@ public:
 
     void leerArbol();
     void guardarArbol();
-    void makeList(Nodo*);
-    void makeArbol(Nodo* raiz, int);
+    void makeList(Nodo*, int);
+    void makeArbol();
+    void makeArbol_aux(Nodo* raiz, int indice);
     void reiniciar();
     void inicializarArreglo();
     void imprimirArreglo();

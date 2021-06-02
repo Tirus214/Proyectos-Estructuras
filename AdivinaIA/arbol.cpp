@@ -300,7 +300,9 @@ void Arbol::hacerBalanceado(Nodo* arbol, int altura){
 }
 
 
-
+void Arbol::insertarRaiz(QString texto){
+    raiz = new Nodo(texto);
+}
 
 
 

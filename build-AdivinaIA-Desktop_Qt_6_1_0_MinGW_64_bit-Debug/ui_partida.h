@@ -28,17 +28,17 @@ public:
     {
         if (Partida->objectName().isEmpty())
             Partida->setObjectName(QString::fromUtf8("Partida"));
-        Partida->resize(400, 300);
+        Partida->resize(582, 300);
         lblPregunta = new QLabel(Partida);
         lblPregunta->setObjectName(QString::fromUtf8("lblPregunta"));
-        lblPregunta->setGeometry(QRect(90, 100, 211, 41));
+        lblPregunta->setGeometry(QRect(120, 80, 341, 41));
         lblPregunta->setAlignment(Qt::AlignCenter);
         btnSi = new QPushButton(Partida);
         btnSi->setObjectName(QString::fromUtf8("btnSi"));
-        btnSi->setGeometry(QRect(80, 220, 80, 25));
+        btnSi->setGeometry(QRect(170, 200, 80, 25));
         btnNo = new QPushButton(Partida);
         btnNo->setObjectName(QString::fromUtf8("btnNo"));
-        btnNo->setGeometry(QRect(240, 220, 80, 25));
+        btnNo->setGeometry(QRect(330, 200, 80, 25));
 
         retranslateUi(Partida);
 

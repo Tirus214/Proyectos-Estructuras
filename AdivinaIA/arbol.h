@@ -36,6 +36,7 @@ struct Arbol
 
        void insertarNuevo(Nodo*, QString, QString);
        void hacerBalanceado(Nodo*, int);
+       void insertarRaiz(QString texto);
 };
 
 #endif // ARBOL_H

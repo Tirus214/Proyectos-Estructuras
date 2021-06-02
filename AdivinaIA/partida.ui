@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>582</width>
     <height>300</height>
    </rect>
   </property>
@@ -16,9 +16,9 @@
   <widget class="QLabel" name="lblPregunta">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>100</y>
-     <width>211</width>
+     <x>120</x>
+     <y>80</y>
+     <width>341</width>
      <height>41</height>
     </rect>
    </property>
@@ -32,8 +32,8 @@
   <widget class="QPushButton" name="btnSi">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>220</y>
+     <x>170</x>
+     <y>200</y>
      <width>80</width>
      <height>25</height>
     </rect>
@@ -45,8 +45,8 @@
   <widget class="QPushButton" name="btnNo">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>220</y>
+     <x>330</x>
+     <y>200</y>
      <width>80</width>
      <height>25</height>
     </rect>

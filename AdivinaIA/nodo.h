@@ -19,6 +19,8 @@ struct Nodo
        }
 
        bool isHoja();
+       void insertarHijoSi(QString);
+       void insertarHijoNo(QString);
 };
 
 #endif // NODO_H

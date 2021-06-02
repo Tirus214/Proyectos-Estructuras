@@ -28,7 +28,7 @@ void Partida::showPregunta(){
         ui->lblPregunta->setText("¿Estaba pensando en un/a " + juego->actual->texto +"?");
     }
     else{
-        ui->lblPregunta->setText(juego->actual->texto);
+        ui->lblPregunta->setText("¿" + juego->actual->texto +"?");
     }
 }
 

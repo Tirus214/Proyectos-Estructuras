@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    juego = new Juego();
     ui->setupUi(this);
 }
 
@@ -15,7 +16,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::setJuego(Juego* _juego){
     juego = _juego;
-    juego->leerArbol();
 }
 
 

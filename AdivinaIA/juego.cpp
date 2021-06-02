@@ -1,21 +1,19 @@
 #include "juego.h"
 
 void Juego::guardarArbol(){
-    arbol->hacerBalanceado(arbol->raiz, arbol->altura(arbol->raiz));
+    //arbol->hacerBalanceado(arbol->raiz, arbol->altura(arbol->raiz));
     //cantNodos = arbol->contadorNodos(arbol->raiz);
     //inicializarArreglo();
-    makeList(arbol->raiz);
+    makeList(arbol->raiz, 0);
+    //imprimirArreglo();
     filemanager->escribir("DatosDeArbol", arreglo);
 }
 
 void Juego::leerArbol(){
-    arreglo.clear();
-    arreglo = filemanager->leer2("DatosDeArbol");
+    filemanager->leer("DatosDeArbol", arreglo);
 
-    //imprimirArreglo();
-
-    makeArbol(arbol->raiz, arreglo.size()-1);
-
+    imprimirArreglo();
+    makeArbol();
 
 }
 
@@ -24,49 +22,56 @@ void Juego::reiniciar(){
 }
 
 
-void Juego::makeList(Nodo* nodo){
+void Juego::makeList(Nodo* nodo, int indice){
     if(nodo == NULL)
         return;
-    else{
-        arreglo.append(nodo->texto);
-        makeList(nodo->hijoSi);
-        makeList(nodo->hijoNo);
+    arreglo[indice] = nodo->texto;
+    makeList(nodo->hijoSi, 2*indice+1);
+    makeList(nodo->hijoNo, 2*indice+2);
+}
+
+void Juego::makeArbol(){
+    if(arreglo[0] == "")
+        return;
+    arbol->insertarRaiz(arreglo[0]);
+    arbol->raiz->hijoSi = new Nodo("");
+    arbol->raiz->hijoNo = new Nodo("");
+    makeArbol_aux(arbol->raiz->hijoSi, 1);
+    makeArbol_aux(arbol->raiz->hijoNo, 2);
+}
+
+
+void Juego::makeArbol_aux(Nodo* raiz, int indice){
+    try{
+        QString texto = arreglo[indice];
+        if(texto == "")
+            return;
+
+        else{
+            raiz->texto = texto;
+            raiz->hijoSi = new Nodo("");
+            raiz->hijoNo = new Nodo("");
+            makeArbol_aux(raiz->hijoSi, 2*indice+1);
+            makeArbol_aux(raiz->hijoNo, 2*indice+2);
+        }
+    }
+    catch(exception e){
+        return;
     }
 }
 
-void Juego::makeArbol(Nodo* raiz, int indice){
-    if(indice < 0)
-        return;
-
-    if(raiz == NULL){
-        raiz = new Nodo(arreglo.at(indice));
-    }
-    else{
-        arbol->insertarNuevo(raiz, arreglo.at(indice-1), arreglo.at(indice));
-    }
-
-    /*
-    if(indice*2 >= arreglo.size() ||indice*2+1 >= arreglo.size() )
-        return;
-    else {
-        raiz->hijoSi = new Nodo(arreglo.takeAt(indice*2));
-        raiz->hijoNo = new Nodo(arreglo.takeAt(indice*2+1));
-        makeArbol(raiz->hijoSi, indice*2);
-        makeArbol(raiz->hijoSi, indice*2+1);
-    }*/
-}
 
 
 void Juego::inicializarArreglo(){
-    for (int i=0; i<cantNodos; i++) {
-        arreglo.append(" ");
+    for (int i=0; i<500000; i++) {
+        arreglo[i] = "";
     }
 }
 
 
 void Juego::imprimirArreglo(){
-    for (int i=0; i<arreglo.size(); i++) {
-        qDebug() << arreglo.at(i);
+    for (int i=0; i<cantNodos; i++) {
+        qDebug() << arreglo[i];
     }
 }
 

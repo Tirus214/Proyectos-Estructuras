@@ -32,6 +32,10 @@ struct Arbol
         int cantNodos2(Nodo*);
        void nodos_nivel (Nodo*, int, int);
        int contadorNodos(Nodo*);
+
+
+       void insertarNuevo(Nodo*, QString, QString);
+       void hacerBalanceado(Nodo*, int);
 };
 
 #endif // ARBOL_H

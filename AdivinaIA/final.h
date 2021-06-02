@@ -13,11 +13,18 @@ class Final : public QDialog
 
 public:
     Juego* juego;
+    bool status;
+    QString pregunta;
+    QString respuesta;
 
     explicit Final(QWidget *parent = nullptr);
     ~Final();
 
     void setJuego(Juego*);
+
+private slots:
+
+    void on_btnAceptar_clicked();
 
 private:
     Ui::Final *ui;

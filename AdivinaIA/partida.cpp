@@ -16,24 +16,41 @@ Partida::~Partida()
 
 void Partida::setJuego(Juego* _juego){
     juego = _juego;
-    raiz = juego->arbol->raiz;
-    if(raiz != NULL)
+    juego->acerto = 0;
+    if(juego->actual != NULL)
         showPregunta();
     else
         this->close();
 }
 
 void Partida::showPregunta(){
-    if(raiz->hijoSi == NULL & raiz->hijoNo == NULL){
-        ui->lblPregunta->setText("¿Estaba pensando en un/a " + raiz->texto +"?");
+    if(juego->actual->isHoja()){
+        ui->lblPregunta->setText("¿Estaba pensando en un/a " + juego->actual->texto +"?");
+    }
+    else{
+        ui->lblPregunta->setText(juego->actual->texto);
     }
 }
 
 
 void Partida::on_btnSi_clicked(){
-
+    if(juego->actual->isHoja()){
+        juego->acerto = 1;
+        this->close();
+    }
+    else{
+        juego->actual = juego->actual->hijoSi;
+        showPregunta();
+    }
 }
 
 void Partida::on_btnNo_clicked(){
-
+    if(juego->actual->isHoja()){
+        juego->acerto = 0;
+        this->close();
+    }
+    else{
+        juego->actual = juego->actual->hijoNo;
+        showPregunta();
+    }
 }

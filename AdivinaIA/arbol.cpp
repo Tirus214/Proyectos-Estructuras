@@ -279,10 +279,25 @@ Nodo* Arbol::borrarElemento(QString ele, Nodo* arbol)
 
 
 
+void Arbol::insertarNuevo(Nodo* elemento, QString pregunta, QString respuesta){
+    QString antiguo = elemento->texto;
+    elemento->texto = pregunta;
+    elemento->hijoSi = new Nodo(respuesta);
+    elemento->hijoNo = new Nodo(antiguo);
+}
 
 
+void Arbol::hacerBalanceado(Nodo* arbol, int altura){
+    if(altura == 0)
+        return;
+    else if(arbol->isHoja()){
+        arbol->hijoSi = new Nodo(" ");
+        arbol->hijoNo = new Nodo(" ");
+    }
 
-
+    hacerBalanceado(arbol->hijoSi, altura-1);
+    hacerBalanceado(arbol->hijoNo, altura-1);
+}
 
 
 

@@ -3,6 +3,7 @@
 #include "juego.h"
 #include <QDialog>
 
+
 namespace Ui {
 class Partida;
 }
@@ -13,7 +14,6 @@ class Partida : public QDialog
 
 public:
     Juego* juego;
-    Nodo* raiz;
 
     explicit Partida(QWidget *parent = nullptr);
     ~Partida();

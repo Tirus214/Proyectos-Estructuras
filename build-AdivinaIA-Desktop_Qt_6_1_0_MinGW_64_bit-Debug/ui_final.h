@@ -13,8 +13,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,23 +23,23 @@ class Ui_Final
 public:
     QPushButton *btnAceptar;
     QLabel *lblPregunta;
-    QTextEdit *txtIngresar;
+    QLineEdit *txtLine;
 
     void setupUi(QDialog *Final)
     {
         if (Final->objectName().isEmpty())
             Final->setObjectName(QString::fromUtf8("Final"));
-        Final->resize(400, 300);
+        Final->resize(508, 295);
         btnAceptar = new QPushButton(Final);
         btnAceptar->setObjectName(QString::fromUtf8("btnAceptar"));
-        btnAceptar->setGeometry(QRect(160, 230, 80, 25));
+        btnAceptar->setGeometry(QRect(230, 210, 80, 25));
         lblPregunta = new QLabel(Final);
         lblPregunta->setObjectName(QString::fromUtf8("lblPregunta"));
-        lblPregunta->setGeometry(QRect(100, 70, 211, 41));
+        lblPregunta->setGeometry(QRect(80, 70, 371, 51));
         lblPregunta->setAlignment(Qt::AlignCenter);
-        txtIngresar = new QTextEdit(Final);
-        txtIngresar->setObjectName(QString::fromUtf8("txtIngresar"));
-        txtIngresar->setGeometry(QRect(73, 150, 261, 41));
+        txtLine = new QLineEdit(Final);
+        txtLine->setObjectName(QString::fromUtf8("txtLine"));
+        txtLine->setGeometry(QRect(130, 140, 271, 41));
 
         retranslateUi(Final);
 

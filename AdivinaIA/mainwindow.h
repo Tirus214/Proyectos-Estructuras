@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 #include "juego.h"
 #include "partida.h"
+#include "final.h"
+#include "mensaje.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -15,11 +17,14 @@ class MainWindow : public QMainWindow
 public:
     Juego* juego;
     Partida partida;
+    Final final;
+    Mensaje mensaje;
 
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     void setJuego(Juego*);
+    void mostrarMensaje();
 
 private slots:
 

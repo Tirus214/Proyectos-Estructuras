@@ -2,6 +2,7 @@
 #define CONTENEDOR_H
 #include "ordenador.h"
 #include <ctime>
+#define K 5000
 
 class Contenedor{
 public:
@@ -10,9 +11,9 @@ public:
     ArrayDinamico* colaCircular;
     ArrayDinamico* pila;
     ArrayDinamico* listaDoble;
-    int original[10000];
-    int vector[10000];
-    int n = 10000;
+    int original[K];
+    int vector[K];
+    int n = K;
     unsigned tiempo1;
     unsigned tiempo2;
     double duracion;

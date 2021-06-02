@@ -17,6 +17,8 @@ struct Nodo
             texto = d;
             hijoSi = hijoNo = NULL;
        }
+
+       bool isHoja();
 };
 
 #endif // NODO_H

@@ -7,9 +7,11 @@ class Ordenador{
 public:
 
     int n;
+    bool finalizado;
 
     Ordenador(int _n){
         n = _n;
+        finalizado = false;
     }
 
     //ordenamientos

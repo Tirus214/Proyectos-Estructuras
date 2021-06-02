@@ -35,25 +35,25 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(477, 381);
+        MainWindow->resize(394, 291);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         btnIniciar = new QPushButton(centralwidget);
         btnIniciar->setObjectName(QString::fromUtf8("btnIniciar"));
-        btnIniciar->setGeometry(QRect(110, 190, 80, 25));
+        btnIniciar->setGeometry(QRect(70, 120, 80, 25));
         btnGuardar = new QPushButton(centralwidget);
         btnGuardar->setObjectName(QString::fromUtf8("btnGuardar"));
-        btnGuardar->setGeometry(QRect(290, 190, 80, 25));
+        btnGuardar->setGeometry(QRect(250, 120, 80, 25));
         btnSalir = new QPushButton(centralwidget);
         btnSalir->setObjectName(QString::fromUtf8("btnSalir"));
-        btnSalir->setGeometry(QRect(200, 260, 80, 25));
+        btnSalir->setGeometry(QRect(160, 160, 80, 25));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(210, 100, 71, 21));
+        label->setGeometry(QRect(170, 70, 71, 21));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 477, 25));
+        menubar->setGeometry(QRect(0, 0, 394, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

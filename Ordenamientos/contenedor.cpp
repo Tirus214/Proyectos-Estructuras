@@ -2,7 +2,7 @@
 
 int Contenedor::crearAleatorio(){
     int numero;
-    std::uniform_int_distribution<int> distribution(0, 1000000);
+    std::uniform_int_distribution<int> distribution(0,99);
     numero = distribution(*QRandomGenerator::global());
     return numero;
 }
@@ -47,7 +47,7 @@ void Contenedor::startTimer(){
 void Contenedor::endTimer(){
     tiempo2 = clock();
     cout << tiempo1 << "    " << tiempo2 << endl << endl;
-    duracion = (double(tiempo1-tiempo2)/CLOCKS_PER_SEC)*1000000000;
+    duracion = (double(tiempo2-tiempo1)/CLOCKS_PER_SEC);
 }
 
 
@@ -120,7 +120,8 @@ void Contenedor::ordBinsort(){
     ordenador->binsort(colaCircular, NULL);
     ordenador->binsort(listaDoble, NULL);
     ordenador->binsort(pila, NULL);
-    endTimer();
+    if(ordenador->finalizado)
+        endTimer();
 }
 
 void Contenedor::ordRadixsort(){

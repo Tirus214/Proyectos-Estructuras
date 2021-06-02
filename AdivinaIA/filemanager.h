@@ -13,7 +13,7 @@ public:
     Filemanager(){}
     void leer(QString name, QString arreglo[]);
     void escribir(QString name, QStringList arreglo);
-    void leer2(QString name, QStringList arreglo);
+    QStringList leer2(QString name);
 };
 
 #endif // FILEMANAGER_H

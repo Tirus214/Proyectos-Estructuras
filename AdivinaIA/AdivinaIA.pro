@@ -15,6 +15,7 @@ SOURCES += \
     juego.cpp \
     main.cpp \
     mainwindow.cpp \
+    mensaje.cpp \
     nodo.cpp \
     partida.cpp
 
@@ -24,12 +25,14 @@ HEADERS += \
     final.h \
     juego.h \
     mainwindow.h \
+    mensaje.h \
     nodo.h \
     partida.h
 
 FORMS += \
     final.ui \
     mainwindow.ui \
+    mensaje.ui \
     partida.ui
 
 # Default rules for deployment.

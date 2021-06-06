@@ -18,7 +18,9 @@ public:
     explicit Mensaje(QWidget *parent = nullptr);
     ~Mensaje();
 
+    //muestra el mensaje
     void showMensaje();
+    //setea el juego
     void setJuego(Juego*);
 
 private slots:

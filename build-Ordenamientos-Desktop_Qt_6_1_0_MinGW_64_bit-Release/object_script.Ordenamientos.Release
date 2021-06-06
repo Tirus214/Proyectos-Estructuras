@@ -1,0 +1,10 @@
+release/arraydinamico.o
+release/colacircular.o
+release/contenedor.o
+release/listadobleenlazada.o
+release/main.o
+release/mainwindow.o
+release/nodo.o
+release/ordenador.o
+release/pila.o
+release/moc_mainwindow.o

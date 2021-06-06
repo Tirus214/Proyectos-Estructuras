@@ -1,19 +1,20 @@
 #ifndef PILA_H
 #define PILA_H
-#include "nodo.h"
+#include "arraydinamico.h"
 
-struct Pila{
-
-    Nodo* ultimo;
+struct Pila
+{
+    ArrayDinamico* array;
 
     Pila(){
-        ultimo = NULL;
+        array = new ArrayDinamico();
     }
 
+    bool isEmpty();
     void push(int dato);
-    Nodo* pop(void);
-    bool isEmpty (void);
+    Nodo* pop();
     Nodo* peek();
 };
+
 
 #endif // PILA_H

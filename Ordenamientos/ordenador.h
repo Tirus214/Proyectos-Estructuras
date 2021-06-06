@@ -1,6 +1,8 @@
 #ifndef ORDENADOR_H
 #define ORDENADOR_H
-#include "arraydinamico.h"
+#include "colacircular.h"
+#include "pila.h"
+#include "listadobleenlazada.h"
 
 
 class Ordenador{

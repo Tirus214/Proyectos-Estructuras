@@ -19,18 +19,24 @@ CONFIG += c++11
 
 SOURCES += \
     arraydinamico.cpp \
+    colacircular.cpp \
     contenedor.cpp \
+    listadobleenlazada.cpp \
     main.cpp \
     mainwindow.cpp \
     nodo.cpp \
-    ordenador.cpp
+    ordenador.cpp \
+    pila.cpp
 
 HEADERS += \
     arraydinamico.h \
+    colacircular.h \
     contenedor.h \
+    listadobleenlazada.h \
     mainwindow.h \
     nodo.h \
-    ordenador.h
+    ordenador.h \
+    pila.h
 
 FORMS += \
     mainwindow.ui

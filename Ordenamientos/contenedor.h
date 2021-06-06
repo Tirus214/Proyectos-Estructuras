@@ -8,9 +8,9 @@ class Contenedor{
 public:
 
     Ordenador* ordenador;
-    ArrayDinamico* colaCircular;
-    ArrayDinamico* pila;
-    ArrayDinamico* listaDoble;
+    ColaCircular* colaCircular;
+    Pila* pila;
+    ListaDobleEnlazada* listaDoble;
     int original[K];
     int vector[K];
     int n = K;
@@ -20,9 +20,9 @@ public:
 
     Contenedor(){
         ordenador = new Ordenador(n);
-        colaCircular = new ArrayDinamico();
-        pila = new ArrayDinamico();
-        listaDoble = new ArrayDinamico();
+        colaCircular = new ColaCircular();
+        pila = new Pila();
+        listaDoble = new ListaDobleEnlazada();
         tiempo1 = 0;
         tiempo2 = 0;
         duracion = 0.0;

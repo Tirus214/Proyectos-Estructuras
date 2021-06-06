@@ -23,7 +23,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    //setea el juego
     void setJuego(Juego*);
+    //llama a mensaje
     void mostrarMensaje();
 
 private slots:

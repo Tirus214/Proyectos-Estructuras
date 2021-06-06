@@ -101,3 +101,26 @@
                 }
 
             }
+
+
+        void encolar(){
+
+        }
+
+        void desencolar(){
+
+        }
+
+
+        void push(){
+
+        }
+
+        void pop(){
+
+        }
+
+
+        void getCima(){
+
+        }

@@ -18,7 +18,9 @@ public:
     explicit Partida(QWidget *parent = nullptr);
     ~Partida();
 
+    //setea el juego
     void setJuego(Juego*);
+    //muestra la pregunta o respuesta
     void showPregunta();
 
 private slots:

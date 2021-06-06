@@ -18,8 +18,11 @@ struct Nodo
             hijoSi = hijoNo = NULL;
        }
 
+       //evalua si el nodo es hoja
        bool isHoja();
+       //inserta un nodo hijoSi
        void insertarHijoSi(QString);
+       //inserta un nodo hijoNo
        void insertarHijoNo(QString);
 };
 

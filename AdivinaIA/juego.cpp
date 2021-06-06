@@ -1,20 +1,13 @@
 #include "juego.h"
 
 void Juego::guardarArbol(){
-    //arbol->hacerBalanceado(arbol->raiz, arbol->altura(arbol->raiz));
-    //cantNodos = arbol->contadorNodos(arbol->raiz);
-    //inicializarArreglo();
     makeList(arbol->raiz, 0);
-    //imprimirArreglo();
     filemanager->escribir("DatosDeArbol", arreglo);
 }
 
 void Juego::leerArbol(){
     filemanager->leer("DatosDeArbol", arreglo);
-
-    imprimirArreglo();
     makeArbol();
-
 }
 
 void Juego::reiniciar(){
@@ -33,8 +26,8 @@ void Juego::makeList(Nodo* nodo, int indice){
 void Juego::makeArbol(){
     if(arreglo[0] == "")
         return;
-    arbol->insertarRaiz(arreglo[0]);
-    arbol->raiz->hijoSi = new Nodo("");
+    arbol->insertarRaiz(arreglo[0]);//primero crea la raiz
+    arbol->raiz->hijoSi = new Nodo("");//crea los hijos para que no sea null
     arbol->raiz->hijoNo = new Nodo("");
     makeArbol_aux(arbol->raiz->hijoSi, 1);
     makeArbol_aux(arbol->raiz->hijoNo, 2);
@@ -50,7 +43,7 @@ void Juego::makeArbol_aux(Nodo* raiz, int indice){
         else{
             raiz->texto = texto;
             raiz->hijoSi = new Nodo("");
-            raiz->hijoNo = new Nodo("");
+            raiz->hijoNo = new Nodo("");//crea los hijos para que no sea null
             makeArbol_aux(raiz->hijoSi, 2*indice+1);
             makeArbol_aux(raiz->hijoNo, 2*indice+2);
         }

@@ -26,9 +26,9 @@ void MainWindow::imprimirElementos(){
         ui->txtNumeros->append(QString::number(contenedor->original[i]));
         ui->txtVector->append(QString::number(contenedor->vector[i]));
     }
-    imprimir(contenedor->colaCircular->primero, ui->txtCola);
-    imprimir(contenedor->listaDoble->primero, ui->txtLista);
-    imprimir(contenedor->pila->primero, ui->txtPila);
+    imprimir(contenedor->colaCircular->array->primero, ui->txtCola);
+    imprimir(contenedor->listaDoble->array->primero, ui->txtLista);
+    imprimir(contenedor->pila->array->primero, ui->txtPila);
 }
 
 void MainWindow::limpiarPantalla(){

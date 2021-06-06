@@ -38,23 +38,3 @@ void Filemanager::leer(QString name, QString arreglo[]){
 }
 
 
-QStringList Filemanager::leer2(QString name){
-    QStringList arreglo;
-    QFile file("C:/Archivos/" + name + ".txt");
-    if (!file.open(QFile::ReadOnly | QFile::Text)){
-        qDebug() << "No se pudo abrir el archivo" << name;
-        return arreglo;
-    }
-    QTextStream in(&file);
-    while(!in.atEnd()){
-        QString line = in.readLine();
-        //qDebug() << line;
-        try {
-           arreglo.append(line);
-        }  catch (Filemanager) {
-            continue;
-        }
-    }
-    file.close();
-    return arreglo;
-}

@@ -1,0 +1,10 @@
+debug/arraydinamico.o
+debug/colacircular.o
+debug/contenedor.o
+debug/listadobleenlazada.o
+debug/main.o
+debug/mainwindow.o
+debug/nodo.o
+debug/ordenador.o
+debug/pila.o
+debug/moc_mainwindow.o

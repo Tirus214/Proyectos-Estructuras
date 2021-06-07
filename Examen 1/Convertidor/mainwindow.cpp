@@ -30,6 +30,7 @@ void MainWindow::on_lineEdit_returnPressed()
 }
 
 //____________Funciones enteras
+//
 QString decimalAOctal2(ListaSimple *lista, Nodo *temp)
 {
     //convertir toda la lista a un solo numero

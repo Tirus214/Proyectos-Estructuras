@@ -403,6 +403,7 @@ void MainWindow::on_pushButton_clicked()
         lista4 =actual->listainorden(raiz,lista4);
 
         QString num;
+        num.append("(");
 
         NodoLista *temp = new NodoLista();
         temp = lista4->primerNodo;
@@ -411,6 +412,7 @@ void MainWindow::on_pushButton_clicked()
             num.append(temp->dato);
             temp = temp->siguiente;
         }
+        num.append(")");
         ui->lineEdit->setText(num);
 
         int tamano=0;

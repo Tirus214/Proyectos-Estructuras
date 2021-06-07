@@ -68,8 +68,6 @@ struct NodoArbol
 {
     NodoArbol *izq;
     NodoArbol *der;
-    NodoArbol *siguiente;
-    NodoArbol *anterior;
     QString dato;
 
     NodoArbol()
@@ -84,23 +82,6 @@ struct NodoArbol
         qDebug() << nodo->dato;
     }
 
-    NodoArbol *getDerecha()
-    {
-        return der;
-    }
-    NodoArbol *getIzquierda()
-    {
-        return izq;
-    }
-
-    void insertarDerecha(NodoArbol *qNodo)
-    {
-        der = qNodo;
-    }
-    void insertarIzquierda(NodoArbol *qNodo)
-    {
-        izq = qNodo;
-    }
 
     void preorden(NodoArbol *raiz)
     {

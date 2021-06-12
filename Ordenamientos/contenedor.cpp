@@ -2,7 +2,7 @@
 
 int Contenedor::crearAleatorio(){
     int numero;
-    std::uniform_int_distribution<int> distribution(0,99);
+    std::uniform_int_distribution<int> distribution(0,999);
     numero = distribution(*QRandomGenerator::global());
     return numero;
 }
@@ -117,19 +117,19 @@ void Contenedor::ordQuicksort(){
 void Contenedor::ordBinsort(){
     startTimer();
     ordenador->binsort(NULL, vector);
-    ordenador->binsort(colaCircular->array, NULL);
-    ordenador->binsort(listaDoble->array, NULL);
-    ordenador->binsort(pila->array, NULL);
+    //ordenador->binsort(colaCircular->array, NULL);
+    //ordenador->binsort(listaDoble->array, NULL);
+    //ordenador->binsort(pila->array, NULL);
     if(ordenador->finalizado)
         endTimer();
 }
 
 void Contenedor::ordRadixsort(){
     startTimer();
-    ordenador->radixsort(NULL, vector);
+    //ordenador->radixsort(NULL, vector);
     ordenador->radixsort(colaCircular->array, NULL);
-    ordenador->radixsort(listaDoble->array, NULL);
-    ordenador->radixsort(pila->array, NULL);
+    //ordenador->radixsort(listaDoble->array, NULL);
+    //ordenador->radixsort(pila->array, NULL);
     endTimer();
 }
 

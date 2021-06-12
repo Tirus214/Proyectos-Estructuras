@@ -3,7 +3,7 @@
 #include "colacircular.h"
 #include "pila.h"
 #include "listadobleenlazada.h"
-
+#define NUMELTS 20
 
 class Ordenador{
 public:

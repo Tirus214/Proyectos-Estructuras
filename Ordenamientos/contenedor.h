@@ -2,7 +2,7 @@
 #define CONTENEDOR_H
 #include "ordenador.h"
 #include <ctime>
-#define K 5000
+#define K 100000
 
 class Contenedor{
 public:
@@ -28,11 +28,15 @@ public:
         duracion = 0.0;
     }
 
+    //introduce en los TDA n cantidad de numeros
     int crearAleatorio();
+    //genera un numero aleatorio
     void generarNumeros();
     void desordenar();
     void imprimir();
+    //inicia el contador de ejecucion
     void startTimer();
+    //finaliza y retorna el contador de ejecucion
     void endTimer();
 
     void ordIntercambio();

@@ -12,10 +12,10 @@ struct ListaAristas {
        }
 
        // encabezados de funcion
-       void insertarAlInicio (int dato, int peso);
+       void insertarAlInicio (int dato);
        Arista* borrarAlInicio(void);
        void imprimir(void);
-       void insertarAlFinal(int dato, int peso);
+       void insertarAlFinal(int dato);
        Arista* borrarAlFinal(void);
        Arista* buscar (int dato);//
        int largo (void);//

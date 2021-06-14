@@ -402,7 +402,7 @@ void Ordenador::radixsort(ArrayDinamico* array, int vector[]){
       struct {
         int info;
         int next;
-      } node[n];
+      } node[n*2];
       int exp, first, i, j, k, p, q, y;
 
       if(array == NULL){
@@ -524,11 +524,11 @@ void Ordenador::radixsort(ArrayDinamico* array, int vector[]){
               } /* fin del for */
 
               /* Copiar de regreso al archivo original */
-              //nodoI = array->primero;
+              nodoI = array->primero;
               for (i = 0; i < n; i++) {
-                //nodoI->numero = node[first].info;
+                nodoI->numero = node[first].info;
                 first = node[first].next;
-                //nodoI = nodoI->siguiente;
+                nodoI = nodoI->siguiente;
               } /*fin del for */
            }
 }/* fin de radixsort*/

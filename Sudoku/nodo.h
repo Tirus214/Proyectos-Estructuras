@@ -11,6 +11,7 @@ struct Nodo {
        int dato; // parte de datos
        Nodo* adyacentes[23];
        bool visitado;
+       bool modificable;
        Nodo* siguiente;// puntero para enlazar nodos
        // constructor
        int indice;
@@ -22,11 +23,13 @@ struct Nodo {
                 visitado = false;
                 siguiente = NULL; // sig es null
                 indice = 0;
+                modificable = true;
 
        }
 
        void imprimir();
        void insertarAdyacente(Nodo*);
+       bool buscarAdyacente(int n);
 };
 
 #endif // NODO_H

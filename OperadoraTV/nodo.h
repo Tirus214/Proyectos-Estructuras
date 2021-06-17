@@ -7,26 +7,22 @@
 #include "listasimple.h"
 
 struct Nodo {
-       int codigo;
-       int dato; // parte de datos
-       Nodo* adyacentes[23];
-       bool visitado;
-       Nodo* siguiente;// puntero para enlazar nodos
-       // constructor
-       int indice;
+           int dato; // parte de datos
+           ListaAristas * aristas;
+           bool visitado;
+           Nodo* siguiente;// puntero para enlazar nodos
+           // constructor
 
-       Nodo(int codigo_, int dato_)
-       {
-                codigo = codigo_;
-                dato = dato_; // asigna los datos
-                visitado = false;
-                siguiente = NULL; // sig es null
-                indice = 0;
+           Nodo(int d)
+           {
+                    dato = d; // asigna los datos
+                    aristas = new ListaAristas();
+                    visitado = false;
+                    siguiente = NULL; // sig es null
 
-       }
+           }
 
-       void imprimir();
-       void insertarAdyacente(Nodo*);
+           void imprimir();
 };
 
 #endif // NODO_H

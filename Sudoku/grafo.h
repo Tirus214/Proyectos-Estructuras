@@ -25,7 +25,6 @@ struct Grafo
        void profundidad();
        void anchura(Nodo * v);
 
-
 // fin struct
 };
 

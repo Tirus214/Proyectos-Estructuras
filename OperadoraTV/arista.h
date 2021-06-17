@@ -6,15 +6,15 @@ using namespace std;
 
 struct Arista {
        int dato; // parte de datos
-       //int peso;
+       int peso;
 
        Arista * siguiente;// puntero para enlazar nodos
        // constructor
 
-       Arista(int d)
+       Arista(int dat_, int peso_)
        {
-                dato = d; // asigna los datos
-                //peso = p;
+                dato = dat_; // asigna los datos
+                peso = peso_;
                 siguiente = NULL; // sig es null
 
        }
@@ -22,7 +22,7 @@ struct Arista {
        // imprimir
        void imprimir()
        {
-            cout <<dato << endl;
+            cout <<peso << endl;
        }
 };
 

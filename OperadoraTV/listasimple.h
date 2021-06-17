@@ -3,23 +3,20 @@
 #include "nodo.h"
 #include "listaaristas.h"
 
-/*
 struct ListaSimple {
-
        // solo con pN es suficiente
        Nodo *primerNodo, *ultimoNodo;
 
        ListaSimple()
        {
-           primerNodo = ultimoNodo = NULL;
+                    primerNodo = ultimoNodo = NULL;
        }
 
        // encabezados de funcion
        void insertarAlInicio (int dato);
        Nodo* borrarAlInicio(void);
        void imprimir(void);
-       void insertarAlFinal(int codigo, int dato);
-       void insertarAlFinal(Nodo*);
+       void insertarAlFinal(int dato);
        Nodo* borrarAlFinal(void);
        Nodo* buscar (int dato);//
        int largo (void);//
@@ -35,7 +32,5 @@ struct ListaSimple {
        void encolar(int);
        Nodo* desencolar();
 };
-
-*/
 
 #endif // LISTASIMPLE_H

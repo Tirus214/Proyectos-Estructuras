@@ -5,16 +5,15 @@
 
 struct Grafo
 {
-       int indice;
-       Nodo* vertices[64];
+        ListaSimple * vertices;
 
-       Grafo()
-       {
-            indice = 0;
-       }
+           Grafo()
+           {
+                  vertices = new ListaSimple();
+           }
 
        void insertarVertice(int d);
-       void insertarArista(int origen, int destino);
+       void insertarArista(int origen, int destino, int peso);
        void imprimir ();
        void borrarArista(int origen, int destino);
        void borrarVertice (int dato);

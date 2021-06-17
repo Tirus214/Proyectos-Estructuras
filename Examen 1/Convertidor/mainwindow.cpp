@@ -508,10 +508,94 @@ QString decimalAHexadecimalPunto(ListaSimple *lista, Nodo *temp,ListaSimple *lis
     return num;
 }
 
-QString octalpor8(ListaSimple *lista1,Nodo *temp,ListaSimple *lista2,unsigned long long control)
+QString octalToDecimal(ListaSimple *lista,Nodo *temp)
 {
-    //falta
+
+    temp = lista->primerNodo;
+    double cuadrado=8;
+    double total=0;
+    while(temp!=NULL)
+    {
+        if(QString::compare(temp->num, "0", Qt::CaseInsensitive)!=0)
+            total = total + (temp->num.toInt()* 1/cuadrado);
+
+        cuadrado= cuadrado*8;
+        temp = temp->siguiente;
+    }
+
+    QString nuevo = QString::number(total);
+    std::reverse(nuevo.begin(), nuevo.end());
+    nuevo.chop(2);
+    std::reverse(nuevo.begin(), nuevo.end());
+    return nuevo;
+
 }
+
+QString binaryToDecimal(ListaSimple *lista,Nodo *temp)
+{
+
+    temp = lista->primerNodo;
+    double cuadrado=2;
+    double total=0;
+    while(temp!=NULL)
+    {
+        if(QString::compare(temp->num, "0", Qt::CaseInsensitive)!=0)
+            total = total + (1/cuadrado);
+
+        cuadrado= cuadrado*2;
+        temp = temp->siguiente;
+    }
+
+    QString nuevo = QString::number(total);
+    std::reverse(nuevo.begin(), nuevo.end());
+    nuevo.chop(2);
+    std::reverse(nuevo.begin(), nuevo.end());
+    return nuevo;
+
+}
+
+QString hexaToDecimal(ListaSimple *lista,Nodo *temp)
+{
+
+    temp = lista->primerNodo;
+    double cuadrado=16;
+    double total=0;
+    while(temp!=NULL)
+    {
+        if(QString::compare(temp->num, "0", Qt::CaseInsensitive)!=0)
+        {
+            if(QString::compare(temp->num, "A", Qt::CaseInsensitive)==0)
+                total = total + (10*1/cuadrado);
+            else
+                if(QString::compare(temp->num, "B", Qt::CaseInsensitive)==0)
+                    total = total + (11*1/cuadrado);
+                else
+                    if(QString::compare(temp->num, "C", Qt::CaseInsensitive)==0)
+                        total = total + (12*1/cuadrado);
+                    else
+                        if(QString::compare(temp->num, "D", Qt::CaseInsensitive)==0)
+                            total = total + (13*1/cuadrado);
+                        else
+                            if(QString::compare(temp->num, "E", Qt::CaseInsensitive)==0)
+                                total = total + (14*1/cuadrado);
+                            else
+                                if(QString::compare(temp->num, "F", Qt::CaseInsensitive)==0)
+                                    total = total + (15*1/cuadrado);
+                                else
+                                    total = total + (temp->num.toInt()*1/cuadrado);
+        }
+        cuadrado= cuadrado*16;
+        temp = temp->siguiente;
+    }
+
+    QString nuevo = QString::number(total);
+    std::reverse(nuevo.begin(), nuevo.end());
+    nuevo.chop(2);
+    std::reverse(nuevo.begin(), nuevo.end());
+    return nuevo;
+
+}
+
 
 
 //LineEdits
@@ -678,7 +762,11 @@ void MainWindow::on_lineEdit_6_textChanged(const QString &arg1)
                 lista->add(arg1.at(x));
 
             ui->lineEdit_7->setText(decimalAOctalPunto(lista,temp,lista2,lista3));
+            lista2->primerNodo = NULL;
+            lista3->primerNodo = NULL;
             ui->lineEdit_8->setText(decimalABinarioPunto(lista,temp,lista2,lista3));
+            lista2->primerNodo = NULL;
+            lista3->primerNodo = NULL;
             ui->lineEdit_9->setText(decimalAHexadecimalPunto(lista,temp,lista2,lista3));
 
             delete(lista);
@@ -692,6 +780,149 @@ void MainWindow::on_lineEdit_6_textChanged(const QString &arg1)
          ui->lineEdit_7->setText("");
          ui->lineEdit_8->setText("");
          ui->lineEdit_9->setText("");
+    }
+}
+
+
+void MainWindow::on_lineEdit_8_textChanged(const QString &arg1)
+{/*
+    if(arg1.size()!=0)
+    {
+        if(!arg1.endsWith("0") && !arg1.endsWith("1"))
+        {
+            ui->label_8->setText("Debe usar solo 1 ó 0");
+            ui->lineEdit_8->setText(arg1.chopped(1));
+        }
+        else
+        {
+            ListaSimple *lista = new ListaSimple();//el numero orignal del lineEdit
+
+            Nodo *temp = new Nodo();
+            for(int x = 0; x< arg1.size();x++)
+                lista->add(arg1.at(x));
+
+            ui->lineEdit_6->setText( binaryToDecimal(lista,temp));
+            qDebug () << binaryToDecimal(lista,temp);
+
+            delete(lista);
+            delete(temp);
+
+        }
+    }
+    else
+    {
+         ui->lineEdit_7->setText("");
+         ui->lineEdit_9->setText("");
+    }*/
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
+    if(ui->lineEdit_8->text().size()!=0)
+    {
+        if(!ui->lineEdit_8->text().endsWith("0") && !ui->lineEdit_8->text().endsWith("1"))
+        {
+            ui->label_8->setText("Debe usar solo 1 ó 0");
+            //ui->lineEdit_8->setText(ui->lineEdit_8->text().chopped(1));
+        }
+        else
+        {
+            ListaSimple *lista = new ListaSimple();//el numero orignal del lineEdit
+
+            Nodo *temp = new Nodo();
+            for(int x = 0; x< ui->lineEdit_8->text().size();x++)
+                lista->add(ui->lineEdit_8->text().at(x));
+
+            ui->lineEdit_6->setText( binaryToDecimal(lista,temp));
+
+            delete(lista);
+            delete(temp);
+
+        }
+    }
+    else
+    {    qDebug () << "ups";
+         ui->lineEdit_7->setText("");
+         ui->lineEdit_9->setText("");
+    }
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    ui->lineEdit->setText("");
+    ui->lineEdit_2->setText("");
+    ui->lineEdit_3->setText("");
+    ui->lineEdit_4->setText("");
+    ui->lineEdit_5->setText("");
+    ui->lineEdit_6->setText("");
+    ui->lineEdit_7->setText("");
+    ui->lineEdit_8->setText("");
+}
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    if(ui->lineEdit_7->text().size()!=0)
+    {
+        if(ui->lineEdit_7->text().contains("9") || ui->lineEdit_7->text().contains("8"))
+        {
+            ui->label_7->setText("Debe usar solo numeros del 0 al 7");
+            //ui->lineEdit_8->setText(ui->lineEdit_8->text().chopped(1));
+        }
+        else
+        {
+            ListaSimple *lista = new ListaSimple();//el numero orignal del lineEdit
+
+            Nodo *temp = new Nodo();
+            for(int x = 0; x< ui->lineEdit_7->text().size();x++)
+                lista->add(ui->lineEdit_7->text().at(x));
+
+            ui->lineEdit_6->setText( octalToDecimal(lista,temp));
+
+            delete(lista);
+            delete(temp);
+
+        }
+    }
+    else
+    {    qDebug () << "ups";
+         ui->lineEdit_8->setText("");
+         ui->lineEdit_9->setText("");
+    }
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    if(ui->lineEdit_9->text().size()!=0)
+    {
+        if(ui->lineEdit_9->text().contains("G") || ui->lineEdit_7->text().contains("H"))
+        {
+            ui->label_9->setText("Debe usar solo numeros del 0 al 9 y letras de la A a la F");
+            //ui->lineEdit_8->setText(ui->lineEdit_8->text().chopped(1));
+        }
+        else
+        {
+            ListaSimple *lista = new ListaSimple();//el numero orignal del lineEdit
+
+            Nodo *temp = new Nodo();
+            for(int x = 0; x< ui->lineEdit_9->text().size();x++)
+                lista->add(ui->lineEdit_9->text().at(x));
+
+            ui->lineEdit_6->setText( hexaToDecimal(lista,temp));
+
+            delete(lista);
+            delete(temp);
+
+        }
+    }
+    else
+    {    qDebug () << "ups";
+         ui->lineEdit_8->setText("");
+         ui->lineEdit_7->setText("");
     }
 }
 

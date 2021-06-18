@@ -1,0 +1,11 @@
+release/arista.o
+release/grafo.o
+release/grafo2.o
+release/juego.o
+release/listaaristas.o
+release/listasimple.o
+release/main.o
+release/mainwindow.o
+release/nodo.o
+release/nodo2.o
+release/moc_mainwindow.o

@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "juego.h"
+#include "grafo2.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -12,8 +12,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    Juego* juego1;
-    Juego* juego2;
+    Grafo2* juego1;
+    Grafo2* juego2;
 
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();

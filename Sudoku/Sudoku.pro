@@ -11,21 +11,25 @@ CONFIG += c++11
 SOURCES += \
     arista.cpp \
     grafo.cpp \
+    grafo2.cpp \
     juego.cpp \
     listaaristas.cpp \
     listasimple.cpp \
     main.cpp \
     mainwindow.cpp \
-    nodo.cpp
+    nodo.cpp \
+    nodo2.cpp
 
 HEADERS += \
     arista.h \
     grafo.h \
+    grafo2.h \
     juego.h \
     listaaristas.h \
     listasimple.h \
     mainwindow.h \
-    nodo.h
+    nodo.h \
+    nodo2.h
 
 FORMS += \
     mainwindow.ui

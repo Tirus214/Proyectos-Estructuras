@@ -100,37 +100,6 @@ bool Grafo2::resolver(int fila, int columna){
 }//fin de resolver()
 
 
-bool Grafo2::resolver2(){
-    if(columna == 8){ // se verifica que la columna es nueve (se sale del limite del tablero)
-        fila++; // se aumenta una unidad la fila
-        columna = 0; // se reinicia colummna
-    }
-
-    if (fila == 8){ // si se llega a la fila nueve es por que se logro asignar todo los valores a las demas casillas es por ello
-        return true; // que se retorna true para detener la recursividad
-    }
-    if (!matriz[fila][columna]->modificable){ // en caso de que la casilla no se pueda modificar no se hace nada sobre ella solo se hace otra llamada recursiva a la funcion
-        if(continuar){
-            if(resolver(fila, columna+1)){
-                return true;
-            }
-        }
-    }
-    for (int k = 0; k < matriz[fila][columna]->cantPosibles; k++){ // este for va a ir probado los valores que pueden ser asignado
-        if(asignar(fila, columna, matriz[fila][columna]->posibles[k])){ // si es posible asignar se hace una llamada recursiva de resolver para que haga el mismo
-            if(continuar){
-                if(resolver(fila, columna+1)){	//proceso en la casilla siguente si no puede continuar se devuelve a la llamada anterio y el for continua donde quedo
-                    return true;
-                }matriz[fila][columna]->dato = 0; //
-            }
-        }
-
-    }// fin del for(k)
-    continuar = false;
-    return false;
-}//fin de resolver()
-
-
 void Grafo2::getPosibles(){
     int x, temp[17] = {0}; // vector estatico para almacenar temporalmente los posibles valores
     for (int i = 0; i < N; i++){

@@ -5,18 +5,12 @@
 
 struct Grafo2{
 
-    int fila;
-    int columna;
-    bool continuar;
     int indice;
     Nodo2* matriz[N][N];
     Nodo2* vertices[N*N];
 
     Grafo2(){
-        fila = 0;
-        columna = 0;
         indice = 0;
-        continuar = false;
     }
 
     bool validarFila(int fila, int num);

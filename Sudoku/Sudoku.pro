@@ -9,26 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    arista.cpp \
-    grafo.cpp \
     grafo2.cpp \
-    juego.cpp \
-    listaaristas.cpp \
-    listasimple.cpp \
     main.cpp \
     mainwindow.cpp \
-    nodo.cpp \
     nodo2.cpp
 
 HEADERS += \
-    arista.h \
-    grafo.h \
     grafo2.h \
-    juego.h \
-    listaaristas.h \
-    listasimple.h \
     mainwindow.h \
-    nodo.h \
     nodo2.h
 
 FORMS += \

@@ -6,6 +6,7 @@
 struct Grafo
 {
         ListaSimple * vertices;
+        int cantNodos;
 
            Grafo()
            {

@@ -1,5 +1,5 @@
 #include "grafo.h"
-
+/*
 // para insertar un vertice
        void Grafo::insertarVertice(int d)
        {
@@ -228,4 +228,4 @@ void Grafo::anchura(Nodo * v)
     }
     limpiarVisitados();
 }
-
+*/

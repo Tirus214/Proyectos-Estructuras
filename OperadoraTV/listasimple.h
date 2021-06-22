@@ -2,7 +2,7 @@
 #define LISTASIMPLE_H
 #include "nodo.h"
 #include "listaaristas.h"
-
+/*
 struct ListaSimple {
        // solo con pN es suficiente
        Nodo *primerNodo, *ultimoNodo;
@@ -32,5 +32,5 @@ struct ListaSimple {
        void encolar(int);
        Nodo* desencolar();
 };
-
+*/
 #endif // LISTASIMPLE_H

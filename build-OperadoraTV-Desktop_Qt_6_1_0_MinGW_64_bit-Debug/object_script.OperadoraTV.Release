@@ -1,0 +1,11 @@
+release/arista.o
+release/cablera.o
+release/grafo.o
+release/grafo2.o
+release/listaaristas.o
+release/listasimple.o
+release/main.o
+release/mainwindow.o
+release/mapa.o
+release/nodo.o
+release/moc_mainwindow.o

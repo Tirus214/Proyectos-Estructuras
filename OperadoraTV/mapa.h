@@ -2,7 +2,7 @@
 #define MAPA_H
 #include "grafo.h"
 
-
+/*
 class Mapa
 {
 public:
@@ -12,5 +12,5 @@ public:
         grafo = new Grafo();
     }
 };
-
+*/
 #endif // MAPA_H

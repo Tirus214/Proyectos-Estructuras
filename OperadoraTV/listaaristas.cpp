@@ -1,5 +1,5 @@
 #include "listaaristas.h"
-/*
+
 
 // funcion que inserta un nodo nuevo en la lista
 // entradas: el dato a guardar
@@ -255,4 +255,3 @@ int ListaAristas::posicion(int valor)
 
        return -1;
 }
-*/

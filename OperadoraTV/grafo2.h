@@ -1,12 +1,11 @@
 #ifndef GRAFO2_H
 #define GRAFO2_H
-/*#include <bits/stdc++.h>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Grafo2{
 
-    int numNodos,n,m;
+    int numNodos;
     int cantAristas;
     vector<vector<pair<int, int>>> graf;
     vector<bool> esta;
@@ -17,5 +16,5 @@ struct Grafo2{
 
     }
 };
-*/
+
 #endif // GRAFO2_H

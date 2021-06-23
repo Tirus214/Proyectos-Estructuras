@@ -2,7 +2,7 @@
 #define CABLERA_H
 #include "grafo.h"
 #include "grafo2.h"
-/*
+
 class Cablera{
 public:
     //nodos estan numerados de 0 a n-1
@@ -19,5 +19,5 @@ public:
 
     int prim(int nodo);
 };
-*/
+
 #endif // CABLERA_H

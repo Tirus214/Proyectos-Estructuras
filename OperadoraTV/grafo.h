@@ -2,7 +2,7 @@
 #define GRAFO_H
 #include "listasimple.h"
 #include "nodo.h"
-/*
+
 struct Grafo
 {
         ListaSimple * vertices;
@@ -28,5 +28,5 @@ struct Grafo
 
 // fin struct
 };
-*/
+
 #endif // GRAFO_H

@@ -1,5 +1,5 @@
 #include "cablera.h"
-/*
+
 int Cablera::prim(int nodo){
     int ans = 0;
     priority_queue<pair<int, int>> cola; //guardar aristas
@@ -12,4 +12,3 @@ int Cablera::prim(int nodo){
         esta[curr.second] = true;
     }
 }
-*/

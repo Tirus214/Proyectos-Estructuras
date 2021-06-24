@@ -7,7 +7,7 @@
 
 struct Nodo {
            int dato; // parte de datos
-           Arista* aristas[K];
+           Arista* aristas[K]; //vector de aristas
            int cantAristas;
 
            Nodo(int d)
@@ -16,7 +16,7 @@ struct Nodo {
                 cantAristas = 0;
            }
 
-           void imprimir();
+           //inserta una arista dado un destino y peso
            void insertarArista(int destino, int peso);
 };
 

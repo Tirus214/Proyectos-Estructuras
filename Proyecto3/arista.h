@@ -7,8 +7,8 @@ using namespace std;
 
 struct Arista {
 
-       int dato; // parte de datos
-       int peso;
+       int dato; // nodo destino
+       int peso; // peso
 
        Arista(int dat_, int peso_)
        {
@@ -16,11 +16,6 @@ struct Arista {
                 peso = peso_;
        }
 
-       // imprimir
-       void imprimir()
-       {
-            cout <<peso << endl;
-       }
 };
 
 #endif // ARISTA_H

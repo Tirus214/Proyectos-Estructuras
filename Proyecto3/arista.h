@@ -2,7 +2,7 @@
 #define ARISTA_H
 #include <iostream>
 #include <stdio.h>
-#define K 100
+#define K 30
 using namespace std;
 
 struct Arista {

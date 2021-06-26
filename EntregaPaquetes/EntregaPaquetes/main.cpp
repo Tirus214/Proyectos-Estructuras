@@ -6,13 +6,13 @@ int main(int argc, char *argv[])
 {
 
     grafoMatriz * g1 = new grafoMatriz();
-    g1->agregarVertice(10);
-    g1->agregarVertice(20);
-    g1->agregarVertice(30);
-    g1->agregarVertice(40);
-    g1->agregarVertice(50);
-    g1->agregarVertice(60);
-    g1->imprimir();
+    g1->agregarVertice(0);
+    g1->agregarVertice(1);
+    g1->agregarVertice(2);
+    g1->agregarVertice(3);
+    g1->agregarVertice(4);
+    g1->agregarVertice(5);
+    //g1->imprimir();
     cout << endl;
 
             g1->agregarArista(g1->vertices[0], g1->vertices[1],7);
@@ -35,9 +35,17 @@ int main(int argc, char *argv[])
             g1->agregarArista(g1->vertices[4], g1->vertices[5],9);
             g1->imprimir();
 
-            cout<< endl;
-            g1->warshall_floyd();
+            cout<< endl << endl;
+            g1->dijkstra(0);
+            cout<< endl << endl;
 
+            g1->limpiarVisitados();
+/*
+            for (int i=0; i<100; i++) {
+                if(g1->sumatoriaPesos[i] != 0)
+                cout << g1->sumatoriaPesos[i] << endl;
+            }
+*/
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

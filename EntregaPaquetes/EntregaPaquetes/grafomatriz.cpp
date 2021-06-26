@@ -63,19 +63,20 @@ void grafoMatriz::limpiarVisitados()
  // min vertice
     int grafoMatriz::minVertex (int * distanciasCortas)
     {
-        int x = 999999;
-        int y = -1;
+        int x = 999999; //peso
+        int y = -1; //nodo
         // RECORRE EL ARREGLO DE DISTANCIAS CORTAS BUSCANDO EL MENOR NO VISITADO
         for (int i = 0; i < cantidadVertices; i++) {
-            cout <<distanciasCortas[i] << "   ";
+            //cout <<distanciasCortas[i] << "\t";
             // CONDICION PARA OBTENER NO VISITADO Y EL MENOS DE TODOS
             if (!visitados[i] && distanciasCortas[i] < x)
             {
                 y = i;
                 x = distanciasCortas[i];
+                sumatoriaPesos[y] = x;
             }
         }
-        cout <<"min: " << y << "  valor = " << x <<endl;
+        //cout <<"min: " << y << "  valor = " << x <<endl;
         return y;// RETORNA LA POSICION DEL MENOR
     }
 
@@ -130,9 +131,9 @@ void grafoMatriz::limpiarVisitados()
                 }
             }
         }
-
+        cout << endl;
         for (int i = 0; i < cantidadVertices; i++)
-            cout << distanciasCortas[i]<<"   ";
+            cout << distanciasCortas[i]<< "\t";
 
             cout <<endl;
 
@@ -142,7 +143,6 @@ void grafoMatriz::limpiarVisitados()
 // warshall y floyd
     void grafoMatriz::warshall_floyd()
     {
-
         int cn = cantidadVertices;
         int path[100][100];
 
@@ -173,8 +173,7 @@ void grafoMatriz::limpiarVisitados()
         for(int i = 0; i < cn; i++)
             for(int j = 0; j < cn; j++){
                 int dt = path[i][k] + path[k][j];
-                if(path[i][j] > dt)
-                {
+                if(path[i][j] > dt){
                     path[i][j] = dt;
                     //path[j][i] = dt;
                 }

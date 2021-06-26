@@ -120,15 +120,6 @@ void Grafo2::getPosibles(){
     }
 }// fin de determina_posibles
 
-void Grafo2::liberarmemoria(){
-    for (int i = 0; i < N; i++){
-        for (int j = 0; j < N; j++){
-            delete [] matriz[i][j]->posibles;
-        }
-    }
-}
-
-
 
 void Grafo2::copiarGrafo(Grafo2* grafo){
     if(indice < 64){

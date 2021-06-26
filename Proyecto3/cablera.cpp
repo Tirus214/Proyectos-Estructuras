@@ -66,13 +66,13 @@ void Cablera::eliminarTopeCola(Arista* cola[K]){
     }
 }
 
-
+/*
 void Cablera::inicializarEsta(){
     for (int i=0; i<K; i++) {
         esta[i] = false;
     }
 }
-
+*/
 
 
 void Cablera::imprimirArbol(){

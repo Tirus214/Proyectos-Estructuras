@@ -11,7 +11,7 @@ struct Nodo2{
 
     int dato;
     bool modificable;
-    int* posibles;
+    int* posibles;  //arreglo de valores posibles
     int cantPosibles;
 
     Nodo2(){

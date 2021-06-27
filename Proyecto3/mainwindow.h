@@ -46,6 +46,8 @@ private slots:
 
     void on_checkBox_13_stateChanged(int arg1);
 
+    void on_checkBox_13_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

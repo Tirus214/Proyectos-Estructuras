@@ -6,7 +6,14 @@ struct Grafo2{
 
     int cantNodos;
     int cantAristas;
+<<<<<<< Updated upstream
     Nodo* vertices[K];  //vector de nodos
+=======
+    int indiceArbol;
+    int indice;
+    Nodo* vertices[K];
+    bool esta[K];
+>>>>>>> Stashed changes
 
     Grafo2(){
         cantNodos = cantAristas = 0;

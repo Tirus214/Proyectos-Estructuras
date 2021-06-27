@@ -346,6 +346,7 @@ void MainWindow::on_checkBox_15_stateChanged(int arg1)
 
 void MainWindow::on_checkBox_13_stateChanged(int arg1)
 {
+
     if(arg1)
     {
         if(ui->checkBox_15->isChecked())
@@ -362,5 +363,11 @@ void MainWindow::on_checkBox_13_stateChanged(int arg1)
         ui->label_18->setEnabled(0);
         ui->label_19->setEnabled(0);
     }
+}
+
+
+void MainWindow::on_checkBox_13_clicked()
+{
+    qDebug()<< "GG";
 }
 

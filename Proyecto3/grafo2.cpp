@@ -12,8 +12,9 @@ void Grafo2::insetarNodo(int d)
 
 
 void Grafo2::insetarArista(int origen, int destino, int peso){
-    vertices[origen]->insertarArista(destino, peso);
-    vertices[destino]->insertarArista(origen, peso);
+        vertices[origen]->insertarArista(destino, peso, indiceAristas);
+        vertices[destino]->insertarArista(origen, peso, indiceAristas);
+        indiceAristas++;
 }
 
 

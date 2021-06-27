@@ -7,14 +7,16 @@ using namespace std;
 
 struct Arista {
 
-       int dato; // nodo destino
-       int peso; // peso
+           int codigo;
+           int dato; // nodo destino
+           int peso; // peso
 
-       Arista(int dat_, int peso_)
-       {
-                dato = dat_; // asigna los datos
-                peso = peso_;
-       }
+           Arista(int dat_, int peso_, int codigo_)
+           {
+                    codigo = codigo_;
+                    dato = dat_; // asigna los datos
+                    peso = peso_;
+           }
 
 };
 

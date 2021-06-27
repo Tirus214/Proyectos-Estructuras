@@ -17,7 +17,7 @@ struct Nodo {
            }
 
            //inserta una arista dado un destino y peso
-           void insertarArista(int destino, int peso);
+           void insertarArista(int destino, int peso, int codigo);
 };
 
 #endif // NODO_H

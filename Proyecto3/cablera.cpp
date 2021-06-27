@@ -20,7 +20,7 @@ int Cablera::prim(int nodo)
     indiceArbol = 0;
     int ans = 0;
     Arista* cola[K]; // cola de prioridad de mayor a menor peso que guarda aristas {nodo, -peso}
-    cola[indiceCola] = new Arista(nodo, 0); //inserta una nueva arista
+    cola[indiceCola] = new Arista(nodo, 0, 0); //inserta una nueva arista
     indiceCola++;
 
     while(indiceCola > 0)
@@ -33,7 +33,7 @@ int Cablera::prim(int nodo)
 
         esta[actual->dato] = true;
 
-        arbolDeExpansion[indiceArbol] = new Arista(actual->dato, -actual->peso); //inserta en el arbol de expansion
+        arbolDeExpansion[indiceArbol] = new Arista(actual->dato, -actual->peso, actual->codigo); //inserta en el arbol de expansion
         indiceArbol++;
 
         qDebug() << "Peso "<< -actual->peso;
@@ -46,7 +46,7 @@ int Cablera::prim(int nodo)
         for (int i=0; i < tmp->cantAristas; i++)
         {
             //recorre todas las aristas del nodo
-            cola[indiceCola] =  new Arista(tmp->aristas[i]->dato, -tmp->aristas[i]->peso); // las anade a la cola
+            cola[indiceCola] =  new Arista(tmp->aristas[i]->dato, -tmp->aristas[i]->peso, tmp->aristas[i]->codigo); // las anade a la cola
             indiceCola++;
             ordenarCola(cola); //ordena la cola
         }
@@ -96,7 +96,6 @@ void Cablera::inicializarEsta(){
 
 void Cablera::imprimirArbol(){
     for (int i=0; i<indiceArbol; i++) {
-        qDebug() << "Nodo: " << arbolDeExpansion[i]->dato << " Peso arista: " << arbolDeExpansion[i]->peso;
-    }
+    qDebug() << "Nodo: " << arbolDeExpansion[i]->dato << " Peso arista: " << arbolDeExpansion[i]->peso << " Codigo arista: " << arbolDeExpansion[i]->codigo;    }
 }
 

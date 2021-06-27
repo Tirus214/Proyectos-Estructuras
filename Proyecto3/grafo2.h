@@ -6,17 +6,16 @@ struct Grafo2{
 
     int cantNodos;
     int cantAristas;
-
-//    Nodo* vertices[K];  //vector de nodos
+    int indiceAristas;
+    Nodo* vertices[K];  //vector de nodos
 
     int indiceArbol;
     int indice;
-    Nodo* vertices[K];
     bool esta[K];
 
 
     Grafo2(){
-        cantNodos = cantAristas = 0;
+        cantNodos = cantAristas = indiceAristas = 0;
     }
 
     //inserta un nodo al grafo

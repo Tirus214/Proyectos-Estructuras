@@ -15,6 +15,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -85,6 +86,8 @@ public:
     QLabel *label_44;
     QLabel *label_45;
     QLabel *label_46;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -168,7 +171,7 @@ public:
         label_4->setPixmap(QPixmap(QString::fromUtf8("../Imagenes/2_3.png")));
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setEnabled(true);
+        label_5->setEnabled(false);
         label_5->setGeometry(QRect(490, 400, 231, 31));
         label_5->setPixmap(QPixmap(QString::fromUtf8("../Imagenes/4_5 - copia.png")));
         label_6 = new QLabel(centralwidget);
@@ -384,6 +387,16 @@ public:
         label_46->setGeometry(QRect(160, 430, 21, 16));
         label_46->setFont(font1);
         label_46->setAlignment(Qt::AlignCenter);
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(960, 40, 111, 41));
+        QFont font2;
+        font2.setPointSize(12);
+        pushButton->setFont(font2);
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(960, 100, 111, 41));
+        pushButton_2->setFont(font2);
         MainWindow->setCentralWidget(centralwidget);
         label->raise();
         label_2->raise();
@@ -446,6 +459,8 @@ public:
         label_44->raise();
         label_45->raise();
         label_46->raise();
+        pushButton->raise();
+        pushButton_2->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 1107, 21));
@@ -523,6 +538,8 @@ public:
         label_44->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
         label_45->setText(QCoreApplication::translate("MainWindow", "6", nullptr));
         label_46->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Iniciar", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Restablecer", nullptr));
     } // retranslateUi
 
 };

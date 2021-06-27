@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "cablera.h"
+#include <QProcess>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -51,14 +52,18 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+
     delete ui;
 }
+
+Cablera *cablera = new Cablera();
 
 
 void MainWindow::on_checkBox_stateChanged(int arg1)
 {
     if(arg1)
     {
+
         if(ui->checkBox_2->isChecked())
             ui->label_2->setEnabled(1);
         if(ui->checkBox_14->isChecked())
@@ -75,8 +80,11 @@ void MainWindow::on_checkBox_stateChanged(int arg1)
 
 void MainWindow::on_checkBox_2_stateChanged(int arg1)
 {
+
     if(arg1)
     {
+
+
         if(ui->checkBox->isChecked())
              ui->label_2->setEnabled(1);
 
@@ -95,6 +103,7 @@ void MainWindow::on_checkBox_3_stateChanged(int arg1)
 {
     if(arg1)
     {
+
         if(ui->checkBox_2->isChecked())
             ui->label_3->setEnabled(1);
 
@@ -369,5 +378,138 @@ void MainWindow::on_checkBox_13_stateChanged(int arg1)
 void MainWindow::on_checkBox_13_clicked()
 {
     qDebug()<< "GG";
+
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
+    if(ui->checkBox->isChecked())
+        cablera->grafo->insetarNodo(1);
+
+    if(ui->checkBox_2->isChecked())
+        cablera->grafo->insetarNodo(2);
+
+    if(ui->checkBox_3->isChecked())
+        cablera->grafo->insetarNodo(3);
+
+    if(ui->checkBox_4->isChecked())
+        cablera->grafo->insetarNodo(4);
+
+    if(ui->checkBox_5->isChecked())
+        cablera->grafo->insetarNodo(5);
+    if(ui->checkBox_6->isChecked())
+        cablera->grafo->insetarNodo(6);
+    if(ui->checkBox_7->isChecked())
+        cablera->grafo->insetarNodo(7);
+    if(ui->checkBox_8->isChecked())
+        cablera->grafo->insetarNodo(8);
+    if(ui->checkBox_9->isChecked())
+        cablera->grafo->insetarNodo(9);
+    if(ui->checkBox_10->isChecked())
+        cablera->grafo->insetarNodo(10);
+    if(ui->checkBox_11->isChecked())
+        cablera->grafo->insetarNodo(11);
+    if(ui->checkBox_12->isChecked())
+        cablera->grafo->insetarNodo(12);
+
+    if(ui->checkBox_13->isChecked())
+    {
+        cablera->grafo->insetarNodo(13);
+        qDebug() << "AAA";
+    }
+
+    if(ui->checkBox_14->isChecked())
+        cablera->grafo->insetarNodo(14);
+    if(ui->checkBox_14->isChecked())
+        cablera->grafo->insetarNodo(15);
+
+    if(ui->label_2->isEnabled())
+        cablera->grafo->insetarArista(1,2,1);// origen, destino, peso
+
+    if(ui->label_3->isEnabled())
+        cablera->grafo->insetarArista(2,3,1);//
+
+    if(ui->label_4->isEnabled())
+        cablera->grafo->insetarArista(3,4,2);
+
+    if(ui->label_5->isEnabled())
+        cablera->grafo->insetarArista(4,5,2);
+
+    if(ui->label_6->isEnabled())
+        cablera->grafo->insetarArista(5,6,3);
+
+    if(ui->label_7->isEnabled())
+        cablera->grafo->insetarArista(6,7,4);
+
+    if(ui->label_8->isEnabled())
+        cablera->grafo->insetarArista(7,8,3);
+
+    if(ui->label_9->isEnabled())
+        cablera->grafo->insetarArista(8,9,5);
+
+    if(ui->label_10->isEnabled())
+        cablera->grafo->insetarArista(9,10,1);
+
+    if(ui->label_11->isEnabled())
+        cablera->grafo->insetarArista(10,4,2);
+
+    if(ui->label_12->isEnabled())
+        cablera->grafo->insetarArista(10,11,4);
+
+    if(ui->label_13->isEnabled())
+        cablera->grafo->insetarArista(11,12,1);
+
+    if(ui->label_14->isEnabled())
+        cablera->grafo->insetarArista(12,3,1);
+
+    if(ui->label_15->isEnabled())
+        cablera->grafo->insetarArista(11,14,1);
+
+    if(ui->label_16->isEnabled())
+        cablera->grafo->insetarArista(9,15,5);
+
+    if(ui->label_17->isEnabled())
+        cablera->grafo->insetarArista(15,13,3);
+
+    if(ui->label_18->isEnabled())
+        cablera->grafo->insetarArista(13,9,6);
+
+    if(ui->label_19->isEnabled())
+        cablera->grafo->insetarArista(13,14,1);
+
+    if(ui->label_20->isEnabled())
+        cablera->grafo->insetarArista(1,14,6);
+
+    cablera->grafo->imprimirGrafo();
+
+    qDebug() << "prim de 10 "<<cablera->prim(10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
 }
 

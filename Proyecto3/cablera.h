@@ -8,7 +8,7 @@ public:
 
     bool esta[K] = {false}; //arreglo para verificar si el nodo ya fue evaluado
     Grafo2* grafo;
-    int indiceArbol;    //indice para insetar en el arbol
+    int indiceArbol;    //indice para insertar en el arbol
     int indiceCola;     //indice para insertar en la cola de prim
     Arista* arbolDeExpansion[K];
 
@@ -20,10 +20,13 @@ public:
     // obtiene el total de los pesos de realizar el recorrido de menor costo por los nodos
     // y obtiene el arbol de expansion minimo
     int prim(int nodo);
+
     // ordena la un vector de mayor a menor
     void ordenarCola(Arista* cola[K]);
+
     // elimina el primer elemento de un vector
     void eliminarTopeCola(Arista* cola[K]);
+
     // imprime el arbol de expansion
     void imprimirArbol();
 

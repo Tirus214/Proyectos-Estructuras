@@ -11,16 +11,22 @@ void Grafo2::insetarNodo(int d)
 
 
 
-void Grafo2::insetarArista(int origen, int destino, int peso){
+void Grafo2::insetarArista(int origen, int destino, int peso)
+{
     vertices[origen]->insertarArista(destino, peso);
     vertices[destino]->insertarArista(origen, peso);
+
 }
 
 
-void Grafo2::imprimirGrafo(){
-    for (int i=0; i<K; i++) {
+void Grafo2::imprimirGrafo(ListaSimple *lista)
+{
+    for (int i=0; i<K; i++)
+    {
         if(vertices[i] != NULL)
             qDebug() <<"Dato " << vertices[i]->dato << "  cantidad de aristas:" << vertices[i]->cantAristas;
+
+
     }
 }
 

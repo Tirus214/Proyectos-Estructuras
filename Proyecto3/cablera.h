@@ -1,7 +1,7 @@
 #ifndef CABLERA_H
 #define CABLERA_H
 #include "grafo2.h"
-
+#include "ListaSimple.h"
 class Cablera{
 public:
     //nodos estan numerados de 0 a n-1
@@ -19,7 +19,7 @@ public:
 
     // obtiene el total de los pesos de realizar el recorrido de menor costo por los nodos
     // y obtiene el arbol de expansion minimo
-    int prim(int nodo);
+    int prim(int nodo,ListaSimple *lista);
 
     // ordena la un vector de mayor a menor
     void ordenarCola(Arista* cola[K]);

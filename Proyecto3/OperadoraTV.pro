@@ -14,14 +14,17 @@ SOURCES += \
     grafo2.cpp \
     main.cpp \
     mainwindow.cpp \
-    nodo.cpp
+    nodo.cpp \
+    sleeper.cpp
 
 HEADERS += \
+    ListaSimple.h \
     arista.h \
     cablera.h \
     grafo2.h \
     mainwindow.h \
-    nodo.h
+    nodo.h \
+    sleeper.h
 
 FORMS += \
     mainwindow.ui

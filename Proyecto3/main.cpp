@@ -13,14 +13,14 @@ int main(int argc, char *argv[])
 
     cablera->grafo->insetarArista(2, 3, 5);
     cablera->grafo->insetarArista(2, 5, 1);
-    cablera->grafo->insetarArista(2, 7, 33);
+    cablera->grafo->insetarArista(2, 7, 3);
     cablera->grafo->insetarArista(3, 5, 6);
     cablera->grafo->insetarArista(5, 7, 8);
 
-    cablera->grafo->imprimirGrafo();
+    //cablera->grafo->imprimirGrafo();
 
-    qDebug() <<"Prueba hecha en main.cpp: " <<cablera->prim(7);
-     qDebug() <<"\n\n";
+    //qDebug() <<"Prueba hecha en main.cpp: " <<cablera->prim(7);
+     //qDebug() <<"\n\n";
 
     QApplication a(argc, argv);
     MainWindow w;

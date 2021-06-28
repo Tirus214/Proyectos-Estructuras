@@ -1,4 +1,6 @@
 #include "cablera.h"
+#include "ListaSimple.h"
+
 /*
 int Cablera::prim(int nodo){
     int ans = 0;
@@ -15,8 +17,9 @@ int Cablera::prim(int nodo){
 */
 
 
-int Cablera::prim(int nodo)
+int Cablera::prim(int nodo,ListaSimple *lista)
 {
+
     indiceArbol = 0;
     int ans = 0;
     Arista* cola[K]; // cola de prioridad de mayor a menor peso que guarda aristas {nodo, -peso}
@@ -36,8 +39,8 @@ int Cablera::prim(int nodo)
         arbolDeExpansion[indiceArbol] = new Arista(actual->dato, -actual->peso); //inserta en el arbol de expansion
         indiceArbol++;
 
-        qDebug() << "Peso "<< -actual->peso;
-        qDebug() << "dato "<< actual->dato;
+        lista->add(-actual->peso);
+
 
         ans = ans - actual->peso; //suma el peso
 
@@ -46,16 +49,20 @@ int Cablera::prim(int nodo)
         for (int i=0; i < tmp->cantAristas; i++)
         {
             //recorre todas las aristas del nodo
+
             cola[indiceCola] =  new Arista(tmp->aristas[i]->dato, -tmp->aristas[i]->peso); // las anade a la cola
             indiceCola++;
             ordenarCola(cola); //ordena la cola
         }
     }
+
+
     return ans;
 }
 
 void Cablera::ordenarCola(Arista* cola[K])
 {
+
     for (int i=0; i<indiceCola; i++)
     {
         for (int j=i+1; j<indiceCola; j++)

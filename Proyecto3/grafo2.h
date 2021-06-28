@@ -1,6 +1,7 @@
 #ifndef GRAFO2_H
 #define GRAFO2_H
 #include "nodo.h"
+#include "ListaSimple.h"
 
 struct Grafo2{
 
@@ -12,6 +13,7 @@ struct Grafo2{
     int indiceArbol;
     int indice;
     Nodo* vertices[K];
+    //Nodo* aristas[K];
     bool esta[K];
 
 
@@ -24,7 +26,7 @@ struct Grafo2{
     //inserta una arista dado un nodo origen, destino y peso
     void insetarArista(int origen, int destino, int peso);
     //imprime el grafo
-    void imprimirGrafo();
+    void imprimirGrafo(ListaSimple *lista);
 };
 
 #endif // GRAFO2_H

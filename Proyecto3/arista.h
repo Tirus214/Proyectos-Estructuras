@@ -2,6 +2,8 @@
 #define ARISTA_H
 #include <iostream>
 #include <stdio.h>
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #define K 30
 using namespace std;
 
@@ -14,6 +16,7 @@ struct Arista {
        {
                 dato = dat_; // asigna los datos
                 peso = peso_;
+
        }
 
 };

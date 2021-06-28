@@ -52,6 +52,46 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_checkBox_16_stateChanged(int arg1);
+
+    void on_checkBox_17_stateChanged(int arg1);
+
+    void on_checkBox_18_stateChanged(int arg1);
+
+    void on_checkBox_19_stateChanged(int arg1);
+
+    void on_checkBox_21_stateChanged(int arg1);
+
+    void on_checkBox_22_stateChanged(int arg1);
+
+    void on_checkBox_23_stateChanged(int arg1);
+
+    void on_checkBox_24_stateChanged(int arg1);
+
+    void on_checkBox_25_stateChanged(int arg1);
+
+    void on_checkBox_26_stateChanged(int arg1);
+
+    void on_label_11_linkActivated(const QString &link);
+
+    void on_checkBox_27_stateChanged(int arg1);
+
+    void on_checkBox_28_stateChanged(int arg1);
+
+    void on_checkBox_29_stateChanged(int arg1);
+
+    void on_checkBox_31_stateChanged(int arg1);
+
+    void on_checkBox_32_stateChanged(int arg1);
+
+    void on_checkBox_33_stateChanged(int arg1);
+
+    void on_checkBox_30_stateChanged(int arg1);
+
+    void on_checkBox_20_stateChanged(int arg1);
+
+    void on_checkBox_34_stateChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

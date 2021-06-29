@@ -15,12 +15,13 @@ int main(int argc, char *argv[])
     //g1->imprimir();
     cout << endl;
 
-            g1->agregarArista(g1->vertices[0], g1->vertices[1],7);
-            g1->agregarArista(g1->vertices[1], g1->vertices[0],7);
+            g1->agregarArista(g1->vertices[0], g1->vertices[1],7);//
+
+            g1->agregarArista(g1->vertices[1], g1->vertices[0],7);//
             g1->agregarArista(g1->vertices[0], g1->vertices[2],9);
-            g1->agregarArista(g1->vertices[2], g1->vertices[0],9);
+            g1->agregarArista(g1->vertices[2], g1->vertices[0],9);//
             g1->agregarArista(g1->vertices[0], g1->vertices[5],14);
-            g1->agregarArista(g1->vertices[5], g1->vertices[0],14);
+            g1->agregarArista(g1->vertices[5], g1->vertices[0],14);//
             g1->agregarArista(g1->vertices[1], g1->vertices[2],10);
             g1->agregarArista(g1->vertices[2], g1->vertices[1],10);
             g1->agregarArista(g1->vertices[1], g1->vertices[3],15);
@@ -35,11 +36,11 @@ int main(int argc, char *argv[])
             g1->agregarArista(g1->vertices[4], g1->vertices[5],9);
             g1->imprimir();
 
-            cout<< endl << endl;
-            g1->dijkstra(0);
+            cout<< endl << endl<< "Dijkstra: ";
+            g1->dijkstra(0,5);
             cout<< endl << endl;
 
-            g1->limpiarVisitados();
+//            g1->limpiarVisitados();
 /*
             for (int i=0; i<100; i++) {
                 if(g1->sumatoriaPesos[i] != 0)

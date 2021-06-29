@@ -15,6 +15,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_comboBox_currentIndexChanged(const QString &arg1);
+
+    void on_comboBox_2_activated(const QString &arg1);
+
+    void on_checkBox_stateChanged(int arg1);
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

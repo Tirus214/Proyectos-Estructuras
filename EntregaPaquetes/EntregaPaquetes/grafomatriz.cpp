@@ -82,7 +82,9 @@ void grafoMatriz::limpiarVisitados()
 
 //-----------------------------------------
 //dijkstra
-   int* grafoMatriz::dijkstra(int v) {
+
+
+   int grafoMatriz::dijkstra(int v, int destino) {
         // arreglo para llevar los nodos visitados
         limpiarVisitados();
         // arreglo que almacena las distancias más cortas desde el vertice
@@ -131,13 +133,18 @@ void grafoMatriz::limpiarVisitados()
                 }
             }
         }
+        int sumaTotal=0;
         cout << endl;
         for (int i = 0; i < cantidadVertices; i++)
-            cout << distanciasCortas[i]<< "\t";
+        {    cout <<distanciasCortas[i]<< "\t";
+            if(i == destino)
+                sumaTotal= distanciasCortas[i];
+        }
 
             cout <<endl;
 
-        return distanciasCortas;
+        return sumaTotal;
+        //return distanciasCortas;
     }
 
 // warshall y floyd

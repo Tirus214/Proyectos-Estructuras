@@ -82,8 +82,6 @@ Makefile: ../EntregaPaquetes/EntregaPaquetes.pro C:/Qt/6.1.0/mingw81_64/mkspecs/
 		C:/Qt/6.1.0/mingw81_64/mkspecs/qconfig.pri \
 		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_ext_freetype.pri \
 		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_ext_libpng.pri \
-		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_charts.pri \
-		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_charts_private.pri \
 		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_concurrent.pri \
 		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_concurrent_private.pri \
 		C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_core.pri \
@@ -216,8 +214,6 @@ C:/Qt/6.1.0/mingw81_64/mkspecs/common/windows-desktop.conf:
 C:/Qt/6.1.0/mingw81_64/mkspecs/qconfig.pri:
 C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_ext_freetype.pri:
 C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_ext_libpng.pri:
-C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_charts.pri:
-C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_charts_private.pri:
 C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_concurrent.pri:
 C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_concurrent_private.pri:
 C:/Qt/6.1.0/mingw81_64/mkspecs/modules/qt_lib_core.pri:

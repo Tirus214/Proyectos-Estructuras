@@ -42,8 +42,10 @@ struct grafoMatriz{
  void imprimir();
  //obtiene el valor minimo de un arreglo y lo agrega a sumatoriaPesos
  int minVertex (int[]);
+
  //recorre el grafo buscando la sumatoria de costo minima de un origen a cualquier nodo
-int* dijkstra(int ) ;
+int dijkstra(int ,int);
+
 //reinicia los nodos visitados
 void limpiarVisitados();
 // obtiene una matriz con el costo minimo de cada origen a cada destino del grafo
